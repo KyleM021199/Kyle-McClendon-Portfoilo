@@ -1,15 +1,123 @@
+
 :root{
 
 }
 
-
-
-
-
-@media screen and (max-width: 768px) {
+*{
+    font-family: sans-serif, monospace;
+    background-color: gray;
 
 }
 
+
+h1,
+h2{
+    display: flex;
+    justify-content: center;
+    background-color: #040000;
+    color: snow;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#My-Work {
+
+    border-radius: 20%;
+
+}
+
+#About-Me{
+    margin-top: 2%;
+    border-radius: 20%; 
+}
+a{
+    background-color: #040000;
+    color:snow;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #040000;
+    color: snow;
+}
+ body{
+    justify-content: center;
+
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+
+.part-1{
+    display: flex;
+    justify-content: row;
+    align-items: row;
+    margin-top: 0px;
+}
+
+.part-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+
+
+
+@media screen and (max-width: 504px) {
+    h1,
+    h2,
+    nav,
+    .card,
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 25%;
+
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    h1,
+    h2,
+    nav,
+    .card,
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+
+}
+}
+
 @media screen and (max-width: 995px) {
+    h1,
+    h2,
+    nav,
+    footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    }
 
 }
