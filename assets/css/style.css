@@ -1,6 +1,7 @@
 
 :root{
-
+--white: snow;
+--black: #040000;  
 }
 
 *{
@@ -14,8 +15,8 @@ h1,
 h2{
     display: flex;
     justify-content: center;
-    background-color: #040000;
-    color: snow;
+    background-color: var(--black);
+    color: var(--white);
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -31,20 +32,29 @@ h2{
     border-radius: 20%; 
 }
 a{
-    background-color: #040000;
-    color:snow;
+    background-color: var(--black);
+    color:var(--white);
 
 }
 nav{
     display: flex;
     justify-content: space-around;
-    background-color: #040000;
-    color: snow;
+    background-color: var(--black);
+    color: var(--white);
 }
- body{
-    justify-content: center;
+#First-Work{
+    width: 80%;
+}
+#Grad{
+    margin-left: -12%;
+    margin-top: -5%;
+}
+img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
 
-}
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -54,8 +64,12 @@ nav{
 
 .card{
     margin-top: 5%;
+    margin-left: 12%;
+    margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     
 
 }
@@ -72,7 +86,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
 
 }
